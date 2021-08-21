@@ -249,3 +249,15 @@ int string_to_integer(char* str){
 }
 
 
+void string_swap(char* str1, char* str2){
+
+    char temp;
+
+    for (int i=0; str1[i] && str2[i]; i++){
+        temp  = str1[i];
+        str1[i] = str2[i];
+        str2[i] = temp;
+    }
+}
+
+
